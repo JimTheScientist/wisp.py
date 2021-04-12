@@ -6,11 +6,10 @@
 A tiny Python package to interact with the WISP game panel API. (Modified by JimTheScientist).
 
 ### Installation
+I will not be making a pull request to the original library. I'm not the best at this and it will likely have mistakes in it.
 
-The below command installs the original wisp.py, which does not make requests properly. I will update this when I haev modified this to work properly.
 To install from PIP simply run 
 
-I will not be making a pull request to the original library. I'm not the best at this and it will likely have mistakes in it.
 
 ```
 pip install wisp.py-jimthescientist==1.0.0
