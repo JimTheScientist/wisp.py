@@ -13,7 +13,7 @@ To install from PIP simply run
 I will not be making a pull request to the original library. I'm not the best at this and it will likely have mistakes in it.
 
 ```
-pip install wisp.py
+pip install wisp.py-jimthescientist==1.0.0
 ```
 
 
