@@ -1,6 +1,5 @@
 import requests
-import classes
-
+from wispy import classes
 def url_join(*args):
     """Combine URL parts to get the full endpoint address."""
     return '/'.join(arg.strip('/') for arg in args)
@@ -89,21 +88,21 @@ class Wispy(object):
             pass
 
     def start_server(self, identifier: str):
-        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/power", data={'signal': 'start'}, json=True)
+        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/power", data='{"signal": "start"}', json=True)
         return r
 
     def stop_server(self, identifier: str):
-        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/power", data={'signal': 'stop'}, json=True)
+        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/power", data='{"signal": "stop"}', json=True)
         return r
 
     def kill_server(self, identifier: str):
-        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/power", data={'kill': 'stop'}, json=True)
+        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/power", data='{"kill": "stop"}', json=True)
         return r
 
     def restart_server(self, identifier: str):
-        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/power", data={'kill': 'restart'}, json=True)
+        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/power", data='{"kill": "restart"}', json=True)
         return r
 
     def send_command(self, identifier: str, command: str):
-        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/command", data={'command': command}, json=True)
+        r = self.make_post_request(endpoint=f"api/client/servers/{identifier}/command", data='{"command": "' + command +'"}', json=True)
         return r
