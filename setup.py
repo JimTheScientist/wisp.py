@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wispyjim",
-    version="1.3.6",
+    version="1.3.7",
     author="JimTheScientist",
     author_email="aidannpratt@gmail.com",
     description="A tiny Python package to interect with the WISP.gg API, modified by JimTheScientist",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/JimTheScientist/wisp.py",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(where="src"),
     keywords = ['wisp', 'api-wrapper', 'api', 'gaming', 'wrapper'],
     classifiers=[
         "Programming Language :: Python :: 3",
