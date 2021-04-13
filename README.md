@@ -12,7 +12,7 @@ To install from PIP simply run
 
 
 ```
-pip install wisp.py-jimthescientist==1.3.4
+pip install wispyjim==1.3.5
 ```
 
 
