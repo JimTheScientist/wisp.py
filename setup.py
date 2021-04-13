@@ -12,6 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/JimTheScientist/wisp.py",
+    package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     keywords = ['wisp', 'api-wrapper', 'api', 'gaming', 'wrapper'],
     classifiers=[
