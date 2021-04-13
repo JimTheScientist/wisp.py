@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wispyjim",
-    version="1.3.7",
+    version="1.3.8",
     author="JimTheScientist",
     author_email="aidannpratt@gmail.com",
     description="A tiny Python package to interect with the WISP.gg API, modified by JimTheScientist",
