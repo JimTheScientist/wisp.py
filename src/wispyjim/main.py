@@ -1,5 +1,5 @@
 import requests
-from wispyjim import classes
+from src.wispyjim import classes
 def url_join(*args):
     """Combine URL parts to get the full endpoint address."""
     return '/'.join(arg.strip('/') for arg in args)

@@ -12,7 +12,7 @@ To install from PIP simply run
 
 
 ```
-pip install wispyjim==1.3.5
+pip install wispyjim==1.3.6
 ```
 
 
