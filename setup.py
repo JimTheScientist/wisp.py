@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="wisp.py-jimthescientist",
+    name="wisp.py",
     version="1.3.3",
     author="JimTheScientist",
     author_email="aidannpratt@gmail.com",
